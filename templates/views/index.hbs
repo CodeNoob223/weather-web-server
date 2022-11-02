@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+<body>
+    {{>header}}
+    <div class="body">
+        <h3>Today weather forecast:</h3>
+        <form id="weather-form" action="" autocomplete="off">
+            <input id="weather-input" type="text" placeholder="Address">
+            <button type="submit">Check</button>
+            <img class="loadingIcon hidden" src="/images/loading2.gif" alt="loading" width="20px" height="20px">
+            <img class="errorIcon hidden" src="/images/Error.gif" alt="loading" width="20px" height="20px">
+        </form>
+        <p id="weather-location"></p>
+        <p id="weather-address"></p>
+        <p id="weather-forecast"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+</html>
