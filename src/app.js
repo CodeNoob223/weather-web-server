@@ -7,7 +7,6 @@ const hbs = require("hbs");
 const request = require("postman-request");
 const forecast = require("./utils/forecast");
 const geocode = require("./utils/geocode");
-const { query } = require("express");
 
 // Tao path cho Express config
 const publicPath = path.join(__dirname, "../public");
