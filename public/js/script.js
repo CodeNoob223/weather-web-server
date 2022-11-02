@@ -25,7 +25,7 @@ weatherForm.addEventListener("submit", (e) => {
     loadingIcon.classList.remove("hidden");
     const address = encodeURI(weatherInput.value);
     
-    fetchData(`http://localhost:3000/weather?address=${address}`).then(
+    fetchData(`https://mqweather.cyclic.app/weather?address=${address}`).then(
         (data = {}) => {
             if (data.error || !data.location) {
                 weatherLocation.textContent = data.error;
