@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body>
+  {{>header}}
+  <div class="body">
+    <h3>Tính điểm</h3>
+    <form id="tinhdiem-form" action="" autocomplete="off">
+      <table>
+        <tr>
+          <th>Tên môn học</th>
+          <th>Số tín chỉ</th>
+          <th>Thang điểm 10</th>
+        </tr>
+        <tr>
+          <td>Cơ sở lập trình với C</td>
+          <td>3</td>
+          <td>
+            <input type="number" step="0.01" id="csltc">
+          </td>
+        </tr>
+        <tr>
+          <td>Công nghệ đa phương tiện</td>
+          <td>3</td>
+          <td>
+            <input type="number" step="0.01" id="cndpt">
+          </td>
+        </tr>
+        <tr>
+          <td>Đại số</td>
+          <td>2</td>
+          <td>
+            <input type="number" step="0.01" id="ds">
+          </td>
+        </tr>
+        <tr>
+          <td>Kiến trúc máy tính</td>
+          <td>2</td>
+          <td>
+            <input type="number" step="0.01" id="ktmt">
+          </td>
+        </tr>
+        <tr>
+          <td>KTCT Mác-Lênin</td>
+          <td>2</td>
+          <td>
+            <input type="number" step="0.01" id="ktct">
+          </td>
+        </tr>
+        <tr>
+          <td>Pháp luật đại cương</td>
+          <td>2</td>
+          <td>
+            <input type="number" step="0.01" id="pldc">
+          </td>
+        </tr>
+        <tr>
+          <td>Tiếng Anh 2</td>
+          <td>3</td>
+          <td>
+            <input type="number" step="0.01" id="ta2">
+          </td>
+        </tr>
+        <tr>
+          <td>Toán rời rạc</td>
+          <td>2</td>
+          <td>
+            <input type="number" step="0.01" id="trr">
+          </td>
+        </tr>
+      </table>
+      <button type="submit" id="diemBtn">Tính điểm</button>
+      <p id="ketQuaDiem">Kết quả =</p>
+    </form>
+  </div>
+  {{>footer}}
+  <script src="/js/tinhdiem.js"></script>
+</body>
+
+</html>

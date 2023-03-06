@@ -36,6 +36,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/tinhdiem', (req, res) => {
+    res.render('tinhdiem', {
+        title: "Trang tính điểm",
+        name: "Quan"
+    });
+});
+
 app.get('/help', (req, res) => {
     res.render('help', {
         title: "Help page",
